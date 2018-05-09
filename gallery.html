@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Gallery page</title>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">
+		<link href="./css/style.css" rel="stylesheet">
+		<link href="./css/mobile.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Chilling out with my favitor things that interest me.">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="keywords" content="personal website, chilling, school project, beginner">
+		<meta name="author" content="Joe Bellamy">
+		<meta name="description" content="Using JavaScript on personal page.">
+		<!-- [if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+		<![endif]-->
+		<meta name="description" content="Chilling out with my favitor things that interest me.">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$('#gallery a').hover(function(){
+				var galleryHref = $(this).attr('href');
+				var galleryAlt = $(this).attr('title');
+				$('figure img').attr({ src: galleryHref, alt: galleryAlt });
+				$('figcaption').html(galleryAlt);
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<header>
+			<div id="container">
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="aboutSite.html">About Site</a></li>
+						<li><a href="interests.html">Interests</a></li>
+						<li><a href="about.html">About me</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="java.html">JavaScript</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section id="showcase">
+			<div class="container">
+				<h1>Gallery</h1>
+			</div>
+		</section>
+		<section id="boxes">
+			<div class="container">
+				<div id="gallery">
+					<ul>
+						<li><a href="./Gallery/bg2.jpg" title=""><img src="./Gallery/bg2.jpg" width="100" height="75"></a></li>
+						<li><a href="./Gallery/bg3.jpg" title=""><img src="./Gallery/bg3.jpg" width="100" height="75"></a></li>
+						<li><a href="./Gallery/bg4.jpg" title=""><img src="./Gallery/bg4.jpg" width="100" height="75"></a></li>
+						<li><a href="./Gallery/bg5.jpg" title=""><img src="./Gallery/bg5.jpg" width="100" height="75"></a></li>
+						<li><a href="./Gallery/bg6.jpg" title=""><img src="./Gallery/bg6.jpg" width="100" height="75"></a></li>
+						<li><a href="./Gallery/bg7.jpg" title=""><img src="./Gallery/bg7.jpg" width="100" height="75"></a></li>
+						<li><a href="./Gallery/bg8.jpg" title=""><img src="./Gallery/bg8.jpg" width="100" height="75"></a></li>
+						<li><a href="./Gallery/bg9.jpg" title=""><img src="./Gallery/bg9.jpg" width="100" height="75"></a></li>
+					</ul>
+					<figure>
+  					<img src="./Gallery/bg2.jpg" width="400" height="300" alt="Golden Gate Bridge">
+ 					</figure>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<p>Copyright &copy; 2018 Joe Bellamy</p>
+		</footer>
+	</body>
+</html>
