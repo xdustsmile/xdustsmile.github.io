@@ -8,20 +8,17 @@
 		<link href="./css/style.css" rel="stylesheet">
 		<link href="./css/mobile.css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width">
-		<meta name="description" content="Chilling out with my favitor things that interest me.">
-		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-		<meta name="keywords" content="personal website, chilling, school project, beginner">
+		<meta name="description" content="Chilling out with my favitor things that interest me., Using JavaScript on personal page.">
+		<meta name="keywords" content="HTML, CSS, XML, JavaScript, personal website, chilling, school project, beginner">
 		<meta name="author" content="Joe Bellamy">
-		<meta name="description" content="Using JavaScript on personal page.">
 		<!-- [if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
 		</script>
 		<![endif]-->
-		<meta name="description" content="Chilling out with my favitor things that interest me.">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 		<script>
 		$(document).ready(function(){
-			$("#gallery a").hover(function(){
+			$('#gallery a').hover(function(){
 				var galleryHref = $(this).attr('href');
 				var galleryAlt = $(this).attr('title');
 				$('figure img').attr({ src: galleryHref, alt: galleryAlt });
@@ -51,25 +48,25 @@
 				<h1>Gallery</h1>
 			</div>
 		</section>
-		<section id="boxes">
+		<div id="boxes">
 			<div class="container">
 				<div id="gallery">
 					<ul>
-						<li><a href="./Gallery/bg2.jpg" title=""><img src="./Gallery/bg2.jpg" width="100" height="75" alt=""></a></li>
-						<li><a href="./Gallery/bg3.jpg" title=""><img src="./Gallery/bg3.jpg" width="100" height="75" alt=""></a></li>
-						<li><a href="./Gallery/bg4.jpg" title=""><img src="./Gallery/bg4.jpg" width="100" height="75" alt=""></a></li>
-						<li><a href="./Gallery/bg5.jpg" title=""><img src="./Gallery/bg5.jpg" width="100" height="75" alt=""></a></li>
-						<li><a href="./Gallery/bg6.jpg" title=""><img src="./Gallery/bg6.jpg" width="100" height="75" alt=""></a></li>
-						<li><a href="./Gallery/bg7.jpg" title=""><img src="./Gallery/bg7.jpg" width="100" height="75" alt=""></a></li>
-						<li><a href="./Gallery/bg8.jpg" title=""><img src="./Gallery/bg8.jpg" width="100" height="75" alt=""></a></li>
-						<li><a href="./Gallery/bg9.jpg" title=""><img src="./Gallery/bg9.jpg" width="100" height="75" alt=""></a></li>
+						<li><a href="./Gallery/bg2.jpg" title=""><img src="./Gallery/bg2.jpg" width="100" height="75" alt="img1"></a></li>
+						<li><a href="./Gallery/bg3.jpg" title=""><img src="./Gallery/bg3.jpg" width="100" height="75" alt="img2"></a></li>
+						<li><a href="./Gallery/bg4.jpg" title=""><img src="./Gallery/bg4.jpg" width="100" height="75" alt="img3"></a></li>
+						<li><a href="./Gallery/bg5.jpg" title=""><img src="./Gallery/bg5.jpg" width="100" height="75" alt="img4"></a></li>
+						<li><a href="./Gallery/bg6.jpg" title=""><img src="./Gallery/bg6.jpg" width="100" height="75" alt="img5"></a></li>
+						<li><a href="./Gallery/bg7.jpg" title=""><img src="./Gallery/bg7.jpg" width="100" height="75" alt="img6"></a></li>
+						<li><a href="./Gallery/bg8.jpg" title=""><img src="./Gallery/bg8.jpg" width="100" height="75" alt="img7"></a></li>
+						<li><a href="./Gallery/bg9.jpg" title=""><img src="./Gallery/bg9.jpg" width="100" height="75" alt="img8"></a></li>
 					</ul>
 					<figure>
-  					<img src="./Gallery/bg2.jpg" width="400" height="300" alt="">
+  					<img src="./Gallery/bg2.jpg" width="400" height="300" alt="Golden Gate Bridge">
  					</figure>
 				</div>
 			</div>
-		</section>
+		</div>
 		<footer>
 			<p>Copyright &copy; 2018 Joe Bellamy</p>
 		</footer>

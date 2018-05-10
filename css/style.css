@@ -31,14 +31,12 @@ width: 100%;
 
 /* Nav */
 nav {
-  float: center;
   letter-spacing:0.1em;
   font-weight: bold;
 }
 
 nav a {
     text-decoration: none;
-    isplay: block;
 		padding: 25px;
 }
 
@@ -75,7 +73,6 @@ header ul {
 header li {
   font-family: 'Mr Dafoe', cursive, "Work Sans", Arial, sans-serif;
   line-height: 100px;
-  float: center;
   font-weight: bold;
   display:inline;
   padding: 0 0 0 40px;
@@ -200,7 +197,6 @@ table {
 
 /* sidebar */
 aside#sidebar {
-  float: center;
   text-align: center;
   width: 100%;
 }
